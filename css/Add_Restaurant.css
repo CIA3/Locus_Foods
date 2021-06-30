@@ -1,0 +1,193 @@
+.bg-img {
+  /* The image used */
+  background-image: url("../images/r.jpg");
+
+  /* Control the height of the image */
+  height: 1200px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.text-block {
+  position: absolute;
+  top: 450px;
+  left: 120px;
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  width:400px;
+  text-align:center;
+  height:400px;
+}
+
+h1#reach{
+	
+	font-size:45px;
+}
+
+/* Add styles to the form container */
+.addR {
+  position: absolute;
+  right: 0;
+  margin: 80px;
+  width: 550px;
+  padding: 16px;
+  background-color: white;
+}
+  
+.addR input {
+	
+ 
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: solid;
+	width:240px;
+	height:30px;
+   
+}
+
+input[type=file]{
+	
+	border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style:hidden ;
+	
+}
+
+
+h1#GetS{
+	
+	font-style:italic;
+}
+
+
+.column5 {
+  float: left;
+  width: 50%;
+  height:500px;
+  
+}
+
+
+/* Clear floats after the columns */
+.row5:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+input[type="checkbox"]{
+  width: 20px; 
+  height: 20px; 
+}
+
+mark {
+  background-color: white;
+  color: #006400;
+}
+
+
+.btn {
+  background-color: #008000;
+  border: none;
+  color: white;
+  width:200px;
+  margin-left:150px;
+  height:40px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.btn:hover {
+	
+  background-color: #006400;
+  
+}
+
+h1#why{
+	
+	margin-top:80px;
+	margin-left:80px;
+	font-size:40px;
+}
+
+.column3 {
+  float: left;
+  width: 23%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row3 {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row3:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column3 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin-left:40px;
+  height:150px;
+  margin-bottom:5px;
+  border-radius:20px;
+}
+
+h1#how{
+	
+	margin-top:80px;
+	margin-left:80px;
+	font-size:40px;
+}
+
+.column4 {
+  float: left;
+  width: 30%;
+  padding: 0 10px;
+  margin-left:22px;
+  
+}
+
+/* Remove extra left and right margins, due to padding */
+.row4 {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row4:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column4 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,102 @@
+@charset "utf -8";
+
+header{
+	position: relative;
+	width: 100%;
+	left: 0;
+	top : 0;
+	background-color: #05056E;
+	
+}
+header .txtxt{
+	padding-top : 5px;
+	padding-bottom : 5px;
+	padding-right : 25px;
+	margin :0;
+	display : block;
+	
+}
+header .navigation
+{
+	list-style-type : none;
+	overflow : hidden;
+	border-radius : 0;
+	background-color : #05056E;
+	margin :0;
+	padding : 0;
+	
+}
+
+header .navigation_property
+{
+	font-size : 13px;
+	text-decoration : none;
+	padding-left : 30px;
+	padding-top : 8px;
+	margin :0;
+	display : block;
+	color : #FFFFFF;
+	
+	
+}
+
+header .navigation_property2
+{
+	font-size : 12px;
+	text-decoration : underline;
+}
+
+header .list_property
+{
+	display : inline;
+	float : left;
+	
+}
+
+header .list_property1
+{
+	float : right;
+	margin-right : 10px;
+}
+
+header .logo
+{
+	width : 40px;
+	height : 40px;
+}
+
+header .logo_property
+{
+	margin-left : 20px;
+}
+
+header .head_image
+{
+	width : 18px;
+	
+}
+
+header .navigation_property:hover
+{
+	color : #ffc40c;
+}
+
+header .headbtn{
+	width : 200px;
+	height : 32px;
+	padding-bottom : 10px;
+	padding-top : 10px;
+	border-radius : 10px;
+	margin-left : 20px;
+    margin-top: 10px;
+	border : 0px;
+	background-color : 	#32CD32;
+	color : white;
+	transition : border-radius 0.8s;
+}
+
+header .headbtn:hover{
+	background-color : white;
+	color : black;
+	border-radius : 0px;
+}

@@ -1,0 +1,305 @@
+@charset "utf - 8";
+
+.footer
+{
+	width:100%;
+	background:#05056E;
+	display:block;
+	border-radius : 5px;
+}
+
+
+footer .foo
+{
+	width:100%;
+	background:#05056E;
+	display:block;
+	border-radius : 5px;
+	
+}
+
+
+footer .inner-footer
+{
+	width:95%;
+	margin:auto;
+	padding: 30px 10px;
+	display :flex;
+	flex-wrap:wrap;
+	box-sizing:border-box;
+	justify-content:center;
+}
+
+footer .footer-items
+{
+	width: 25%;
+	padding: 10px 20px;
+	box-sizing:border-box;
+}
+
+footer .border
+{
+	height: 2px;
+	width : 40px;
+	
+}
+
+footer .btn1
+{
+	background-color: white solid black;
+	font-size:12px;
+	padding:10px 30px;
+	border-radius:20px;
+	 border-width: thin;
+	 
+	color: #05056E ;
+	cursor:pointer;
+
+}
+
+.btn1:hover
+{ 
+	background-color: white;
+	color:black;
+}
+
+.btn1:active
+{
+  background-color: green;
+  box-shadow: white;
+  transform: translateY(4px);
+}
+
+
+footer h1 {
+	padding: 10px 0;
+	font-size: 25px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+
+
+
+footer h2 {
+	margin: 10px 0;
+	color: grey;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+
+}
+
+footer h3
+{
+	color:pink;
+}
+
+.border {
+	height: 2px;
+	width: 40px;
+	background: #ff9800;
+}
+
+footer ul {
+	list-style: none;
+	color: white;
+	font-size: 15px;
+	letter-spacing: 0.5px;
+}
+
+footer ul a {
+	outline: none;
+	color: white;
+	transition: 0.3s;
+}
+
+footer ul a:hover {
+	color: #ff9800;
+}
+
+footer ul li {
+	margin: 10px 0;
+	height: 25px;
+}
+
+footer li i {
+	margin-right: 20px;
+}
+
+.social-media {
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+
+.social-media a {
+	text-decoration: none;
+}
+
+.social-media i {
+		height: 15px;
+		width: 15px;
+		margin: 20px 5px;
+		padding: 10px;
+		color: white;
+		border-radius: 50%;
+		border: 1px solid grey;
+		transition: 0.3s;
+}
+
+.social-media i:hover {
+	background: yellow;
+}
+
+.footer-bottom {
+	padding: 10px;
+	background: #3d545f;
+	color: #fff;
+	font-size: 12px;
+}
+
+@media screen and (max-width: 1085px) {
+	.footer-items {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.footer-items {
+		width: 100%;
+	}
+}
+
+.language
+{
+	background-color: white;
+	padding:10px 20px;
+	border-radius:8px;
+	font-weight:bold;
+}
+
+.txtar
+{
+	background-color: white;
+	padding:25px 30px;
+	border-radius:10px;
+	transition : padding 1.5s;
+	
+}
+
+
+#comments{
+	width : 200px;
+}
+
+#logoo{
+	width : 200px;
+	height : 80px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

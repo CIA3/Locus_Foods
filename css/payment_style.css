@@ -1,0 +1,71 @@
+.bg-img1 {
+  /* The image used */
+  background-image: url("../images/c.jpg");
+
+  /* Control the height of the image */
+  height: 1000px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  
+}
+
+
+
+h1#pay{
+	
+	text-align:center;
+	font-size:40px;
+	text-decoration:underline;
+}
+
+h3#accept{
+	
+	font-size:30px;
+}
+
+.paymentData{
+	
+	border:2px solid black;
+	position: absolute;
+	text-align:center;
+	height:925px;
+	width:700px;
+	margin-top:30px;
+	margin-bottom:30px;
+	margin-left:300px;
+	background-image:url("../images/b.jpg");
+	background-size:700px 925px;
+	
+}
+
+
+.paymentData input[type=text]{
+  width: 300px; 
+  height: 30px; 
+}
+
+.btn2{
+  
+  background-color: blue;
+  border: none;
+  color: white;
+  width:200px;
+  height:40px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn2:hover{
+	
+	background-color: #006400;
+	
+}
+
+h2#total{
+	
+	font-style:italic;
+}

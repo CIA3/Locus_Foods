@@ -1,0 +1,63 @@
+@charset "utf - 8";
+
+body {
+	background-color : #ffff;
+}
+body .buttons{
+	background-color : #ff9800;
+	color : white;
+	border-radius : 5px;
+	padding : 8px;
+	margin-right : 5px;
+	
+	
+}
+body .buttons:hover{
+	background-color : white;
+	color : black;
+}	
+
+body .buttons:focus{
+	background-color :#05056E;
+}
+
+body .rest_iamge{
+	width : 250px;
+	height : 200px;
+	border-radius : 5px;
+	margin-left : 20px;
+	margin-bottom : 30px;
+}
+
+
+body p {
+	color : black;
+	font-family : impact;
+}
+
+.visit_button
+{
+	width : 100px;
+	border : 0px;
+	border-radius : 5px;
+	height : 30px;
+	background-color : #ADD8E6;
+	
+}
+
+.visit_button:hover{
+	color : white;
+	box-shadow: 5px 10px #888888;
+}
+
+
+.newbtn{
+    color : black;
+    background-color: lawngreen;
+    
+}
+
+.newbtn:hover{
+    background-color: antiquewhite;
+}
+

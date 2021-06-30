@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<?php include ("../php/") ?>
+<html>
+	<head>
+	  <meta charset = "utf - 8">
+	  <meta name = "description" content = "Locus food ride">
+	  <meta name = "keywords" content = "HTML,delivery">
+	  <meta name = "author" content = "LFD">
+	  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+	  <link rel = "stylesheet"  href = "../css/header_style.css">
+	  <link rel = "stylesheet"  href = "../css/footer_style.css"> 
+	  <link rel = "stylesheet"  href = "../css/side_menu_style.css">
+	  <script src = "../js/side_menu_java_script.js"></script>
+	  <script src = "../js/Restaurant_page.js"></script>
+	  <link rel = "stylesheet" href = "../css/admin.css">
+	  <link rel = "icon" type="image/gif/png" href = "../images/iccccc_g6c_icon.ico">
+	  <link href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel = "stylesheet">
+	  <title>Discover Restaurants</title>
+	</head>
+	<header>
+	
+		<ul class = "navigation">
+			<li class = "list_property logo_property"><img class = "logo" src = "../images/LocusLogo.png" alt = "Locus Food Ride Logo"></li>
+			<li class = "list_property"><a class = "navigation_property" href = "home_page.html">HOME</a></li>
+			<li class = "list_property"><a class = "navigation_property" href = "#">RESTAURANT</a></li>
+			<li class = "list_property"><a class = "navigation_property" href = "#">ONGOING OFFERS AND COMBOS</a></li>
+			<li class = "list_property"><a class = "navigation_property" href = "#">ABOUT US</a></li>
+			<li class = "list_property"><img class = "navigation_property navi head_image" src = "../images/iii.png" alt = "Search"></li>
+			<li class = "list_property"><input class = "txtxt" type = "text" placeholder = "Search.." ></li>
+			<li class = "list_property1"><a class = "navigation_property navi navigation_property2" href = "#">Sign out</a></li>
+			<li class = "list_property1"><img class = "navigation_property navi head_image" src = "../images/userW.png" alt = "User"></li>
+			<li class = "list_property1"><img class = "navigation_property head_image" src = "../images/shooping.png" alt = "Food Cart"></li>
+		</ul>
+	
+	</header>
+	
+	
+	<body>
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&lArr;</a>
+		  <a href="#">MY ACCOUNT</a>
+		  <a href="#">FAVOURITES</a>
+		  <a href="#">HELP</a>
+		  <a href="#">SETTINGS</a>
+		</div>
+		<span class = "menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+		<br><br><br>
+		
+	<form action="admin.php" method="post">	
+	<table style="border:0px; width:100%; height:80%; margin-top:10px; margin-right:0px; margin-bottom:100px; margin-left:0px;">
+		<tr><td>	
+			<input type="button" class="b1" name="bt1" value="Order History"  onclick="document.getElementById('p1').style.display='block' ; document.getElementById('p2').style.display='' ;document.getElementById('p3').style.display='' ; document.getElementById('p4').style.display=''">
+			<input type="button" class="b1" name="bt1" value="Customer List"  onclick="document.getElementById('p2').style.display='block' ; document.getElementById('p1').style.display='' ;document.getElementById('p3').style.display='' ; document.getElementById('p4').style.display=''">
+			<input type="button" class="b1" name="bt1" value="Restaurant List"  onclick="document.getElementById('p3').style.display='block' ; document.getElementById('p1').style.display='' ;document.getElementById('p2').style.display='' ; document.getElementById('p4').style.display=''">
+			<input type="button" class="b1" name="bt1" value="Comments"  onclick="document.getElementById('p4').style.display='block' ; document.getElementById('p1').style.display='' ;document.getElementById('p2').style.display='' ; document.getElementById('p3').style.display=''">
+		</td></tr>
+		<tr><td>
+			<div id="p1">
+			<button class = "b2" onclick="document.getElementById('p1').style.display=''"><i class="fa fa-times" aria-hidden="true"></i></button>	
+			<br><br>
+			<table style="border:0px solid black; margin-top:0px; margin-bottom:0px; background-color:orange; width:100%">
+			<tr>
+				<th>
+					<p style = "font-size:28px;color:black"><b>Order History</b></p>
+				</th>
+			</tr>
+			</table>
+			<table style="border:0px solid black; margin-top:2px; margin-bottom:20px; background-color:blue; width:100%">
+			<tr>
+				<td>
+					<div class="d1">
+						<br>
+						<img src="../images/Spicy-Sausage-Pizza.jpg" alt="Pizza Hut" class="image"><br>
+						<h2>Sausage Pizza</h2><br>
+						<p>
+							&nbsp;&nbsp;Customer Name : Tharindu<br>
+							&nbsp;&nbsp;Customer ID : A1<br>
+							&nbsp;&nbsp;Restaurant : Pizza Hut<br>
+							&nbsp;&nbsp;Price : 1800/=<br>
+							&nbsp;&nbsp;Date : XX/XX/XXXX<br>
+							&nbsp;&nbsp;Time : 11.00 A.M<br>
+						</p>
+					</div>
+				</td>
+				<td>
+					<div class="d1">
+						<br>
+						<img src="../images/bucket-chicken.jpg" alt="Chicken Bucket" class="image"><br>
+						<h2>Chicken Bucket</h2><br>
+						<p>
+							&nbsp;&nbsp;Customer Name : Chamod<br>
+							&nbsp;&nbsp;Customer ID : A2<br>
+							&nbsp;&nbsp;Restaurant : KFC<br>
+							&nbsp;&nbsp;Price : 2300/=<br>
+							&nbsp;&nbsp;Date : XX/XX/XXXX<br>
+							&nbsp;&nbsp;Time : 11.00 A.M<br>
+						</p>
+					</div>
+				</td>
+				<td>
+					<div class="d1" style="margin-right:85px">
+						<br>
+						<img src="../images/fries-mcdonalds.jpg" alt="French Fries" class="image"><br>
+						<h2>French Fries</h2><br>
+						<p>
+							&nbsp;&nbsp;Customer Name : Sonal<br>
+							&nbsp;&nbsp;Customer ID : A10<br>
+							&nbsp;&nbsp;Restaurant : MC'Donals<br>
+							&nbsp;&nbsp;Price : 1800/=<br>
+							&nbsp;&nbsp;Date : XX/XX/XXXX<br>
+							&nbsp;&nbsp;Time : 11.00 A.M<br>
+						</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="d1">
+						<br>
+						<img src="../images/subbun.jpg" alt="Sub Bun" class="image"><br>
+						<h2>Submarine Bun</h2><br>
+						<p>
+							&nbsp;&nbsp;Customer Name : Dulan<br>
+							&nbsp;&nbsp;Customer ID : A5<br>
+							&nbsp;&nbsp;Restaurant : KFC <br>
+							&nbsp;&nbsp;Price : 1800/=<br>
+							&nbsp;&nbsp;Date : XX/XX/XXXX<br>
+							&nbsp;&nbsp;Time : 11.00 A.M<br>
+						</p>
+						
+					</div>
+				</td>
+				<td>
+					<div class="d1">
+						<br>
+						<img src="../images/crispy-fried-chicken.jpg" alt="Crispy Chicken Burger" class="image"><br>
+						<h2>Crispy Chicken Burger</h2><br>
+						<p>
+							&nbsp;&nbsp;Customer Name : Kaveen<br>
+							&nbsp;&nbsp;Customer ID : A3<br>
+							&nbsp;&nbsp;Restaurant : Burger King<br>
+							&nbsp;&nbsp;Price : 1800/=<br>
+							&nbsp;&nbsp;Date : XX/XX/XXXX<br>
+							&nbsp;&nbsp;Time : 11.00 A.M<br>
+						</p>
+					</div>
+				</td>
+				<td>
+					<div class="d1" style="margin-right:85px">
+						<br>
+						<img src="../images/cheeseburger.jpg" alt="Cheese Burger" class="image"><br>
+						<h2>Cheese Burger</h2><br>
+						<p>
+							&nbsp;&nbsp;Customer Name : Tharindu<br>
+							&nbsp;&nbsp;Customer ID : A1<br>
+							&nbsp;&nbsp;Restaurant : Burger King<br>
+							&nbsp;&nbsp;Price : 1800/=<br>
+							&nbsp;&nbsp;Date : XX/XX/XXXX<br>
+							&nbsp;&nbsp;Time : 11.00 A.M<br>
+						</p>
+					</div>
+				</td>
+			</tr>
+			</table>
+			</div>
+			
+			<div id="p2">
+			<button class = "b2" onclick="document.getElementById('p2').style.display=''"><i class="fa fa-times" aria-hidden="true"></i></button>	
+			<br><br>
+				
+				<table class="content-table">
+					<thead>
+					<tr >
+						<th>
+							Profile Pic
+						</th><th>
+							Customer Name
+						</th><th>
+							ID
+						</th><th>
+							Contact Number
+						</th><th>
+							Address
+						</th><th>
+							Registered Date
+						</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>
+							<img src="../images/1602758857427.jpg" class="i">
+						</td><td>
+							Tharindu 
+						</td><td>
+							A1
+						</td><td>
+							0712345678
+						</td><td>
+							ABC/D, Kaduwela
+						</td><td>
+							2020/08/06
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="../images/1602758959942.jpg" class="i">
+						</td><td>
+							Chamod
+						</td><td>
+							A2
+						</td><td>
+							0713579135
+						</td><td>
+							BC/D, Malabe
+						</td><td>
+							2020/08/08
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="../images/1602758857423.png" class="i">
+						</td><td>
+							Sonal
+						</td><td>
+							A10
+						</td><td>
+							072468246
+						</td><td>
+							AC/D, Aturugiriya
+						</td><td>
+							2020/08/20
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="../images/1602758857419.png" class="i">
+						</td><td>
+							Dulan
+						</td><td>
+							A5
+						</td><td>
+							0701010101
+						</td><td>
+							AB/D, Godagama
+						</td><td>
+							2020/08/31
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="../images/1602758857415.png" class="i">
+						</td><td>
+							Kaveen
+						</td><td>
+							A3
+						</td><td>
+							071876543
+						</td><td>
+							ABC/D, Battaramulla
+						</td><td>
+							2020/09/01
+						</td>
+					</tr>
+					</tbody>
+				</table>
+				
+			</div>
+			
+			<div id="p3">
+			<button class = "b2" onclick="document.getElementById('p3').style.display=''"><i class="fa fa-times" aria-hidden="true"></i></button>	
+			<br><br>
+				
+				<table class="content-table">
+					<thead>
+					<tr>
+						<th>
+							Restaurant Logo
+						</th><th>
+							Restaurant Name
+						</th><th>
+							ID
+						</th><th>
+							Contact Number
+						</th><th>
+							Address
+						</th><th>
+							Registered Date
+						</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>
+							<img src="../images/pizzahut.png" class="i">
+						</td><td>
+							Pizza Hut 
+						</td><td>
+							R1
+						</td><td>
+							0112345678
+						</td><td>
+							ABC/D, Galle  Rd, Kollupitiya
+						</td><td>
+							2020/07/06
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="../images/mc.png" class="i">
+						</td><td>
+							Mc donalds
+						</td><td>
+							R2
+						</td><td>
+							0113579135
+						</td><td>
+							BC/D, Rajagiriya
+						</td><td>
+							2020/07/08
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="../images/kfc.png" class="i">
+						</td><td>
+							KFC
+						</td><td>
+							R10
+						</td><td>
+							011468246
+						</td><td>
+							AC/D, Atulkotte
+						</td><td>
+							2020/07/20
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="../images/images (1).png" class="i">
+						</td><td>
+							Burger King
+						</td><td>
+							R5
+						</td><td>
+							0101010101
+						</td><td>
+							AB/D, Malabe
+						</td><td>
+							2020/07/31
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="../images/natural-food-typography-logo-design_106244-109 (1).jpg" class="i">
+						</td><td>
+							Dominos
+						</td><td>
+							A3
+						</td><td>
+							071876543
+						</td><td>
+							ABC/D, Battaramulla
+						</td><td>
+							2020/09/01
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			
+			<div id="p4">
+			<button class = "b2" onclick="document.getElementById('p4').style.display=''"><i class="fa fa-times" aria-hidden="true"></i></button>	
+			<br><br>
+				
+				<p>Tharindu:</p>
+				&nbsp &nbsp awsome site
+				<hr>
+				<p>Chamod:</p>
+				&nbsp &nbsp awsome site
+				<hr>
+				<p>Sonal:</p>
+				&nbsp &nbsp awsome site
+				<hr>
+				<p>Dulan:</p>
+				&nbsp &nbsp awsome site
+				<hr>
+				<p>Kaveen:</p>
+				&nbsp &nbsp awsome site
+			</div>
+		</td></tr>
+	</table>	
+	</form>
+	</body>
+
+	<footer>
+		<div class="foo">
+			<div class="inner-footer">
+
+				<div class="footer-items">
+					<form action = "#" target = "self" method="get">
+				<label> <h1> Comments </h1> </label> <br>
+				<textarea id="comments" name="comments" rows ="7" cols="50"  class="txtar"  > </textarea> <br> <br>
+				<input type="submit" class="btn1" id="btn1" name="btn1" value="Submit"> 
+				</div>
+
+				<div class="footer-items">
+					<h2> Links</h2>
+					<div class="border"></div>
+					<ul>
+						<a href="home_page.html"><li>Home</li></a>
+						<a href="#"><li>Restaurant</li></a>
+						<a href=""><li>Cart</li></a>
+						<a href=""><li>Contact Us</li></a>
+					</ul>
+				</div>
+
+				<div class="footer-items">
+					<h2>About Us</h2>
+					<div class="border"></div>
+					<ul>
+						<a href=""><li>Our Story</li></a>
+						<a href=""><li>FAQ</li></a>
+						<a href=""><li>Site Map</li></a>
+						
+					</ul>
+				</div>
+				
+
+				<div class="footer-items">
+					<!--<div class="border"></div>-->
+					<img  id = "logoo" src="../images/logo.jpg" alt = "LOCUS FOOD RIDE">
+
+					<ul>
+						<li><i class="fa fa-map-marker" aria-hidden="true"></i>94/2 locus way colombo 7</li>
+						<li><i class="fa fa-phone" aria-hidden="true"></i>+9423671245</li>
+						<li><i class="fa fa-envelope" aria-hidden="true"></i>LocusFoodRide@gmail.com</li>
+					</ul> 
+					
+
+				<form action = "#" target = "self" method="get">
+					<h3 > Select Language </h3>
+					<select class="language">
+						<option> English </option>
+						<option> Chinese </option>
+						<option> French </option>
+						<option> Spanish </option>
+						<option> Latin </option>
+					</select> <br> <br>
+					
+					<div class="social-media">
+						<a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a href="https://www.google.com/intl/si/gmail/about/#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				
+			</div>
+			<div class="footer-bottom">
+				&copy Copyright Online Food Delivery. All rights reserved.
+			</div>
+		</div>
+	</footer>
+</html>

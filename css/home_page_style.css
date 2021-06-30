@@ -1,0 +1,136 @@
+@charset "uft - 8";
+
+body .headImage{
+	 
+  margin-left: auto;
+  margin-right: auto;
+  border-radius : 15px;
+ 	
+}
+
+body .container {
+  position: relative;
+  width: 100%;
+}
+
+body .headImage {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+body .middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+body .container:hover .headImage {
+  opacity: 0.3;
+}
+
+body .container:hover .middle {
+  opacity: 1;
+}
+
+body .text {
+  background-color: none;
+  color: #05056E;
+  font-size: 40px;
+  padding: 16px 32px;
+}
+
+body ul .food_selector{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  background-color: #f1f1f1;
+}
+
+.food_selector li a {
+  display: block;
+  color: #000;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+
+.food_selector li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.food_selector li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+body .vbuttons{
+	background-color : #ff9800;
+	color : white;
+	border-radius : 5px;
+	padding : 8px;
+	margin-right : 5px;
+	border : 0px;
+	
+}
+body .vbuttons:hover{
+	background-color : #05056E;
+	color : white;
+}	
+
+body .vbuttons:focus{
+	background-color :#05056E;
+}
+
+body .food_iamge{
+	width : 200px;
+	height : 200px;
+	border-radius : 5px;
+	margin-left : 15px;
+}
+
+
+
+body p {
+	color : black;
+	font-family : impact;
+}
+
+body .cart{
+	padding-left : 10px;
+	padding-right : 10px;
+	border-radius : 10px;
+	background-color : white;
+	color : grey;
+	
+}
+
+body .cart:hover{
+	background-color : #ADFF2F;
+	width : 100px;
+}
+
+body .create{
+	width : 200px;
+	height : auto;
+	padding-bottom : 10px;
+	padding-top : 10px;
+	border-radius : 5px;
+	margin-left : 40px;
+	border : 0px;
+	transition : width 1s;
+	background-color : 	#32CD32;
+	color : white;
+}
+
+body  .create:hover {
+	width : 250px;
+}		

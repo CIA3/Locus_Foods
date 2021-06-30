@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset = "utf - 8">
+	  <meta name = "description" content = "Locus food ride">
+	  <meta name = "keywords" content = "HTML,delivery">
+	  <meta name = "author" content = "LFD">
+	  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+	  <link rel = "stylesheet"  href = "../css/header_style.css">
+	  <link rel = "stylesheet"  href = "../css/footer_style.css"> 
+	  <link rel = "stylesheet"  href = "../css/side_menu_style.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	  <script src = "../js/side_menu_java_script.js"></script>
+	  <script src = "../js/contact_us.js"></script>
+	  <!--<link rel = "stylesheet" href = "../css/"> your css file "your wireframe name_style.css"-->
+	  <link rel="stylesheet"  href="../css/contact_style.css">
+	  <link rel = "icon" type="image/gif/png" href = "../images/iccccc_g6c_icon.ico">
+	  <link href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel = "stylesheet">
+	  <title>Contact Us </title>
+	</head>
+<header>
+	<!--<script src = "../js/"></script>-->
+		<ul class = "navigation">
+			<li class = "list_property logo_property"><img class = "logo" src = "../images/LocusLogo.png" alt = "Locus Food Ride Logo"></li>
+			<li class = "list_property"><a class = "navigation_property" href = "../php/home_USER.php">HOME</a></li>
+			<li class = "list_property"><a class = "navigation_property" href = "../php/restaurant_page.php">RESTAURANT</a></li>
+			<li class = "list_property"><a class = "navigation_property" href = "../php/Offers&Combos.php">ONGOING OFFERS AND COMBOS</a></li>
+			<!--<li class = "list_property"><img class = "navigation_property navi head_image" src = "../images/iii.png" alt = "Search"></li>
+			<!--<li class = "list_property"><input class = "txtxt" type = "text" placeholder = "Search.." ></li>-->
+			<li class = "list_property1"><a class = "navigation_property navi navigation_property2" href = "../php/Logout.php">Sign out</a></li>
+			<li class = "list_property1"><a href = "../php/User_Page.php"><img class = "navigation_property navi head_image" src = "../images/userW.png" alt = "User"></a></li>
+            <li class = "list_property1"><a href= "../php/Food_cart.php"><img class = "navigation_property head_image" src = "../images/shooping.png" alt = "Food Cart"></a></li>
+		</ul>
+	
+	</header>
+	
+	
+	<body>
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&lArr;</a>
+		  <a href="../php/User_Page.php">MY ACCOUNT</a>
+             <a href = "../php/Customer_his.php">ORDER HISTORY </a>
+		  <a href="../php/Payment_Detailss.php">PAYMENTS</a>
+		  <a href="../php/Logout.php">SIGN OUT</a>
+		</div>
+		<span class = "menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+	
+	<div class="contacti">
+		<img src="../images/cont.jpg" alt="contact us" class="cimage">
+		<div class="centered">We would love to hear from you..!</div>
+	</div>
+	
+	<br/><br/>
+	
+	<h1 id="contact"> CONTACT US </h1>
+
+	<h2 id="help"> Here to help....! </h2>
+
+		<div class="contactData">
+      
+			<p class="para1"> Your feedback will help us cntinuously improve overselves to make it better for you and our other valued customers. </p>
+			<p class="para2"> (Refer below for other ways to contact us) </p>
+
+
+			<div class="contact-info">
+      
+			  <div class="box">
+				<i class="card-icon fas fa-phone"> </i>
+				<p> +94112671245 </p>
+			  </div>
+
+			  <div class="box">
+				<i class="card-icon fas fa-map-marker-alt"> </i>
+				<p> 94/2,locus way,colombo 7 </p>
+			  </div>
+			  
+			  <div class="box">
+				<i class="card-icon far fa-envelope"> </i>
+				<p> LocusFoodRide@gmail.com </p>
+			  </div>
+			  
+			  <div class="box">
+				<i class="card-icon fas fa-map-marker-fa fa-fax"> </i>
+				<p> +94112850910 </p>
+			  </div>
+	  
+			</div>
+		</div>
+
+
+		<h2 id="comment"> Comments......&#128515; </h2>
+
+	<div class="formData">
+		<form name="form1" action="../php/Contact.php" method="POST" onsubmit="return formValidation()">
+
+			<div class="row">
+				<div class="column" >
+
+					<label><b> First Name* </b></label><br/>
+					<input type ="text"  id="fname" name="fname" style="width:400px;" placeholder="Enter your first name here" ><br/><br/>
+					
+					<label><b> Last Name* </b></label><br/>
+					<input type ="text"  id="lname" name="lname" style="width:400px;" placeholder="Enter your lastst name here"><br/><br/>
+					
+					<label><b> Email Address* </b></label><br/>
+					<input type ="email" id="emailAdd" name="emailAdd" style="width:400px;" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9]+\.[a-z]{2,3}"  placeholder="Enter your email address here"><br/><br/>
+				
+					<label><b> Mobile Number* </b></label><br/>
+					<input type ="text" id="mobile" name="mobile" style="width:400px;" placeholder="Enter your mobile number here"><br/><br/>
+				
+				</div>
+
+				<div class="column">
+
+					<label><b> Comments*  </b></label><br/>
+					<textarea id="cmnt" name="cmnt" rows="10" cols="50" style="width: 400px;"  placeholder="Put your comments here....."></textarea><br/><br/>
+
+				   
+					<p class="para3"> * Required Fields </p>
+					<input type="submit" class="butn1" name="butn1" value="Submit"><br/><br/>
+
+				</div>
+			</div>
+		</form>
+	</div>
+
+
+	</body>
+	
+	
+
+	<footer>
+		<div class="foo">
+			<div class="inner-footer">
+
+		
+
+				<div class="footer-items">
+					<h2 id="link"> Links</h2>
+					<div class="border"></div>
+					<ul>
+						<a href="../php/home_USER.php"><li>Home</li></a>
+                        <a href="../php/restaurant_page.php"><li>Restaurant</li></a>
+						<a href="../php/Food_cart.php"><li>Cart</li></a>
+						<a href="../html/ContactUSUser.html"><li>Contact Us</li></a>
+					</ul>
+				</div>
+
+				<div class="footer-items">
+					<h2 id="about">About Us</h2>
+					<div class="border"></div>
+					<ul>
+						<a href=""><li>Our Story</li></a>
+						<a href=""><li>FAQ</li></a>
+						<a href=""><li>Site Map</li></a>
+						
+					</ul>
+				</div>
+				
+
+				<div class="footer-items">
+					<!--<div class="border"></div>-->
+					<img  id = "logoo" src="../images/logo.jpg" alt = "LOCUS FOOD RIDE">
+
+					<ul>
+						<li><i class="fa fa-map-marker" aria-hidden="true"></i>94/2 locus way colombo 7</li>
+						<li><i class="fa fa-phone" aria-hidden="true"></i>+9423671245</li>
+						<li><i class="fa fa-envelope" aria-hidden="true"></i>LocusFoodRide@gmail.com</li>
+					</ul> 
+					
+
+				<form action = "#" target = "self" method="get">
+					<h3 id="language"> Select Language </h3>
+					<select class="language">
+						<option> English </option>
+						<option> Chinese </option>
+						<option> French </option>
+						<option> Spanish </option>
+						<option> Latin </option>
+					</select> <br> <br>
+					
+					<div class="social-media">
+						<a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a href="https://www.google.com/intl/si/gmail/about/#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				
+			</div>
+			<div class="footer-bottom">
+				&copy Copyright Online Food Delivery. All rights reserved.
+			</div>
+		</div>
+	</footer>
+</html>

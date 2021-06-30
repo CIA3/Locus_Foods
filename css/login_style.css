@@ -1,0 +1,55 @@
+@charset "UTF - 8";
+
+body {
+	background-image : url('../images/PngItem_5131515.png');
+	display : fixed;
+	background-repeat : no-repeat;
+}
+body .create{
+	width : 200px;
+	height : auto;
+	padding-bottom : 10px;
+	padding-top : 10px;
+	border-radius : 5px;
+	/*margin-left : 40px;*/
+	border : 0px;
+	transition : width 1s;
+	background-color : 	#32CD32;
+	color : white;
+}
+
+body  .create:hover {
+	width : 250px;
+}
+
+
+body .txt{
+	width : 480px;
+	border : none;
+	margin : 8px 0;
+	padding : 12px 20px;
+	box-sizing : border-box;
+	border-bottom : 2px solid #32CD32;
+	opacity: 0.6;
+	
+	
+}
+
+header .headbtn{
+	width : 200px;
+	height : 32px;
+	padding-bottom : 10px;
+	padding-top : 10px;
+	border-radius : 10px;
+	margin-left : 20px;
+	border : 0px;
+	background-color : 	#32CD32;
+	color : white;
+	transition : border-radius 0.8s;
+}
+
+header .headbtn:hover{
+	background-color : white;
+	color : black;
+	border-radius : 0px;
+}

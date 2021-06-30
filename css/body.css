@@ -1,0 +1,133 @@
+.ti img
+{
+	border-radius:50%;
+	height:150px;
+	width:100px;
+	margin-left:10%;
+
+
+	
+}
+
+.ti
+{
+	width: 25%;
+	box-sizing:border-box;
+	text-align:right;
+	padding-top:50px;
+	margin-right:70%;
+}
+
+.m1
+{
+	
+	box-sizing:border-box;
+	
+	margin-left:2%;
+	
+	
+	
+}
+
+.mid
+{
+	width:55%;
+	margin:auto;
+	padding: 30px 10px;
+	display :flex;
+	flex-wrap:wrap;
+	box-sizing:border-box;
+	justify-content:center;
+	border:5px solid orange;
+	border-radius:20%;
+	background:orange;
+	
+}
+
+
+
+.sobtn1
+{
+	background-color: grey;
+	font-size:12px;
+	padding:10px 24px;
+	border-radius:8px;
+	color:white;
+	cursor:pointer;
+	font-weight:bold;
+	margin:10px 2px;
+	margin-left:75%;
+}
+
+.sobtn1:hover
+{ 
+	background-color:red;
+	color:black;
+	transform: scale(1.15);
+	 cursor:pointer;
+}
+
+.sobtn1:active
+{
+	 background-color: green;
+  box-shadow: white;
+  transform: translateY(4px);
+}
+
+.mainpage
+{
+	background:white;
+}
+
+.mid:hover {
+  transform: scale(1.03);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  cursor:pointer;
+}
+
+.ti img:hover
+{
+	transform: scale(1.15);
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+	 cursor:pointer;
+}
+
+.disc
+{
+	color:#00fc04;
+}
+
+.m1 li
+{
+	color:black;
+	font-size:18px;
+	font-weight:bold;
+}
+
+.sobtn1 a
+{
+	font-weight:bold;
+	font-size:16px;
+	color:white;
+	text-decoration:none;
+	
+}
+
+.m1 h3
+{
+	color:blue;
+}
+
+.ti p
+{
+	font-size:18px;
+	font-weight:bold;
+}
+
+.m1 p
+{
+	font-size:18px;
+	font-weight:bold;
+	color:black;
+}
+

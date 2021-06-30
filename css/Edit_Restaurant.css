@@ -1,0 +1,127 @@
+.bg-img1 {
+  /* The image used */
+  background-image: url("../images/editrest.jpg");
+
+  /* Control the height of the image */
+  height: 1500px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+h1#reach{
+	
+	font-size:45px;
+}
+
+/* Add styles to the form container */
+.editR {
+	
+  position: absolute;
+  left: 0;
+  margin: 80px;
+  width: 1000px;
+  padding: 16px;
+  background-color: white;
+  
+}
+  
+.editR input {
+	
+ 
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: solid;
+	width:350px;
+	height:30px;
+   
+}
+
+input[type=file]{
+	
+	border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style:hidden ;
+	
+}
+
+
+h1#EditR{
+	
+	font-style:italic;
+}
+
+
+.column8 {
+  float: left;
+  width: 50%;
+  
+  
+}
+
+
+/* Clear floats after the columns */
+.row8:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+.update {
+  background-color: #008000;
+  border: none;
+  color: white;
+  width:200px;
+  margin-right:10px;
+  height:40px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.update:hover {
+	
+  background-color: #006400;
+  
+}
+
+
+.delete {
+  background-color: #008000;
+  border: none;
+  color: white;
+  width:200px;
+  margin-right:20px;
+  height:40px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.delete:hover {
+	
+  background-color: #006400;
+  
+}
+
+.changep {
+ 
+  
+  width:200px;
+  height:30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+

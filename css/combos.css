@@ -1,0 +1,118 @@
+.s1
+{
+	border:5px solid orange;
+	border-radius:10%;
+	width: 40%;
+	padding: 10px 20px;
+	margin-right:100px;
+	background:orange;
+	
+}
+
+.s1:hover
+{
+	 cursor:pointer;
+	transform: scale(1.05);
+}
+
+.s11
+{
+	border:5px solid black;
+	width: 80%;
+	border-radius:10px;
+	padding: 10px 20px;
+	height:240px;
+	background:white;
+}
+
+.s12
+{
+	border:2px solid white;
+	display:flex;
+	width:50%;
+	padding:10px 20px;
+	background:white;
+
+}
+
+.end
+{
+	padding:2px 20px;
+	color:red;
+	font-weight:bold;
+}
+
+.ADC
+{
+	width:50%;
+	padding:10px 10px;
+	border-radius:8px;
+	background-color: green;
+	font-size:12px;	
+	color:white;
+	cursor:pointer;
+	font-weight:bold;
+	margin:10px 2px;
+}
+
+
+.ADC:hover
+{ 
+	background-color:yellow;
+	color:black;
+	transform: scale(1.15);
+	 cursor:pointer;
+}
+
+.ADC:active
+{
+	 background-color: green;
+  box-shadow: white;
+  transform: translateY(4px);
+}
+
+.up
+{
+	display:flex;
+	margin-left:100px;
+	padding-bottom:50px;
+	
+}
+
+.s11 p
+{
+	font-size:18px;
+	font-family:"Lucida Console", Courier, monospace;
+	font-weight:bold;
+	color:blue;
+}
+
+.s11 h3
+{
+	color:#8b00ff;
+}
+
+ 
+ /*Glowing effect to the "Grab Your Offer" line is made by refering w3schools -- link:https://www.w3schools.com/howto/howto_css_glowing_text.asp */
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+   font-family: cursive;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px green, 0 0 40px green, 0 0 50px green, 0 0 60px green, 0 0 70px green;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #80ff4d, 0 0 40px #80ff4d, 0 0 50px #80ff4d, 0 0 60px #80ff4d, 0 0 70px #80ff4d, 0 0 80px #80ff4d;
+  }
+
+
+

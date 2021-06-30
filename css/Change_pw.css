@@ -1,0 +1,328 @@
+
+input[type="text"] {
+  width: 100%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+input[type="email"] {
+  width: 100%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+input[type="tel"] {
+  width: 100%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+
+input[type="password"] {
+  width: 100%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+
+
+.inputWithIcon input[type="text"] {
+  padding-left: 40px;
+}
+
+.inputWithIcon {
+  position: relative;
+}
+
+.inputWithIcon i {
+  position: absolute;
+  left: 0;
+  top: 11px;
+  padding: 9px 8px;
+  color: #aaa;
+  transition: 0.3s;
+  padding-left: 20px;
+ 
+}
+
+
+.inputWithIcon.inputIconBg i {
+  background-color: #aaa;
+  color: #fff;
+  padding: 9px 4px;
+  border-radius: 4px 0 0 4px;
+}
+
+
+
+.inputWithIcon2 input[type="tel"] {
+  padding-left: 40px;
+}
+
+.inputWithIcon2 {
+  position: relative;
+}
+
+.inputWithIcon2 i {
+  position: absolute;
+  left: 0;
+  top: 11px;
+  padding: 9px 8px;
+  color: #aaa;
+  transition: 0.3s;
+  padding-left: 20px;
+ 
+}
+
+
+.inputWithIcon2.inputIconBg i {
+  background-color: #aaa;
+  color: #fff;
+  padding: 9px 4px;
+  border-radius: 4px 0 0 4px;
+}
+
+
+
+
+
+.inputWithIcon3 input[type="email"] {
+  padding-left: 40px;
+}
+
+.inputWithIcon3 {
+  position: relative;
+}
+
+.inputWithIcon3 i {
+  position: absolute;
+  left: 0;
+  top: 11px;
+  padding: 9px 8px;
+  color: #aaa;
+  transition: 0.3s;
+  padding-left: 20px;
+ 
+}
+
+
+.inputWithIcon3.inputIconBg i {
+  background-color: #aaa;
+  color: #fff;
+  padding: 9px 4px;
+  border-radius: 4px 0 0 4px;
+}
+
+
+
+
+.inputWithIcon4 input[type="password"] {
+  padding-left: 40px;
+}
+
+.inputWithIcon4 {
+  position: relative;
+}
+
+.inputWithIcon4 i {
+  position: absolute;
+  left: 0;
+  top: 11px;
+  padding: 9px 8px;
+  color: #aaa;
+  transition: 0.3s;
+  padding-left: 20px;
+ 
+}
+
+
+.inputWithIcon4.inputIconBg i {
+  background-color: #aaa;
+  color: #fff;
+  padding: 9px 4px;
+  border-radius: 4px 0 0 4px;
+}
+
+
+
+.dform
+{
+	width:35%;
+	height:1200px;
+	padding-top:65px;
+	padding-bottom:50px;
+	border:10px solid #fad800;
+	border-radius:7px;
+	background-color:#fad800;
+	text-align:left;
+	padding-left:30px;
+	padding-right:5px;
+	margin-bottom:50px;
+}
+
+.dform:hover
+{
+	transform: scale(1.05);
+}
+
+.ubtn
+{
+	width:30%;
+	padding:10px 30px;
+	border-radius:8px;
+	background-color: green;
+	font-size:12px;	
+	color:white;
+	cursor:pointer;
+	font-weight:bold;
+	margin-right:2000px;	
+	
+}
+
+
+.ubtn:hover
+{ 
+	background-color:grey;
+	color:black;
+	transform: scale(1.15);
+	 cursor:pointer;
+}
+
+.ubtn:active
+{
+	 background-color: green;
+  box-shadow: white;
+  transform: translateY(4px);
+}
+
+
+.ubtn1
+{
+	width:30%;
+	padding:10px 30px;
+	border-radius:8px;
+	background-color: black;
+	font-size:12px;	
+	color:white;
+	cursor:pointer;
+	font-weight:bold;
+	margin-left:0px;	
+	
+}
+
+
+.ubtn1:hover
+{ 
+	background-color:grey;
+	color:black;
+	transform: scale(1.15);
+	 cursor:pointer;
+}
+
+.ubtn1:active
+{
+	 background-color: green;
+  box-shadow: white;
+  transform: translateY(4px);
+}
+
+
+
+
+.va
+{
+	color:black;
+}
+
+.DOB
+{
+	display:flex;
+	background-color:white;
+	width:90%;
+}
+
+.dob2
+{
+	margin-right:30%;
+	padding-top:2%;
+}
+
+.dob1
+{
+	width:100%;
+}
+
+
+
+.pwform
+{
+	width:35%;
+	height:300px;
+	padding-top:65px;
+	padding-bottom:50px;
+	border:10px solid #fad800;
+	border-radius:7px;
+	background-color:#fad800;
+	text-align:left;
+	padding-left:30px;
+	padding-right:5px;
+	margin-bottom:50px;
+}
+
+.pwform:hover
+{
+	transform: scale(1.05);
+}
+
+
+.sbtn
+{
+	width:25%;
+	padding:10px 30px;
+	border-radius:8px;
+	background-color: black;
+	font-size:12px;	
+	color:white;
+	cursor:pointer;
+	font-weight:bold;
+	margin-right:80%;	
+	
+	
+}
+
+
+.sbtn:hover
+{ 
+	background-color:grey;
+	color:black;
+	transform: scale(1.15);
+	 cursor:pointer;
+}
+
+.sbtn:active
+{
+	 background-color: green;
+  box-shadow: white;
+  transform: translateY(4px);
+}
+

@@ -1,0 +1,34 @@
+.div{
+	background-image:url(../images/1603037389780.jpg);
+	margin-bottom:10px;
+	
+}
+
+
+.content-table{
+	text-align:center;
+	width:90%;
+	background-color:white;
+	border : 1px solid black;
+	margin-top:10px;
+	margin-bottom:50px;
+	background-color:white;
+	
+}
+
+.content-table thead tr {
+	background-color: #009879;
+	color: #fffff;
+}
+.content-table th,
+.content-table td {
+	padding: 12px 15px;
+}
+.content-table tbody tr{
+	border-bottom:1px solid #dddddd;
+	
+}
+.content-table tbody tr:nth-of-type(even) {
+	border-bottom:1px solid #dddddd;
+	background-color:#f3f3f3;
+}

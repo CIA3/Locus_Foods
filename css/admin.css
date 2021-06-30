@@ -1,0 +1,95 @@
+#p1{
+	display:none;
+	border:1px solid black;
+	width:95%;
+	margin-left:30px;
+	margin-top:20px;
+}
+#p2{
+	display:none;
+	border:1px solid black;
+	width:95%;
+	margin-left:30px;
+	margin-top:20px;
+}
+#p3{
+	display:none;
+	border:1px solid black;
+	width:95%;
+	margin-left:30px;
+	margin-top:20px;
+}
+#p4{
+	display:none;
+	border:0px solid black;
+	width:95%;
+	margin-left:30px;
+	margin-top:20px;
+}
+.b1{
+	width:200px; height:35px; 
+	border-radius:15px; 
+	font-size:18px;
+	margin-top:0px; margin-left:100px;
+}
+.b2{
+	margin-top:3px; margin-left:1232px;
+}
+
+p{
+	color:grey; font-style:italic;
+}
+
+.image{
+	width:280px; 
+	height:200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+
+.d1{
+	width:320px;
+	height:450px;
+	border:1px solid black;
+	margin-left:40px;
+	margin-top:10px;
+	margin-bottom:20px;	
+	background-color:white;
+}
+
+.i{
+	width:100px; 
+	height:80px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+
+.content-table{
+	text-align: left;
+	width:100%;
+	
+}
+
+.content-table thead tr {
+	background-color: #009879;
+	color: #fffff;
+}
+.content-table th,
+.content-table td {
+	padding: 12px 15px;
+}
+.content-table tbody tr{
+	border-bottom:1px solid #dddddd;
+	
+}
+.content-table tbody tr:nth-of-type(even) {
+	border-bottom:1px solid #dddddd;
+	background-color:#f3f3f3;
+}
+
+.l{
+	color:black;
+
+}

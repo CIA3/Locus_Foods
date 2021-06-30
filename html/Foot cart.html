@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<?php include ("config.php") ?>
+<html>
+	<head>
+	  <meta charset = "utf - 8">
+	  <meta name = "description" content = "Locus food ride">
+	  <meta name = "keywords" content = "HTML,delivery">
+	  <meta name = "author" content = "LFD">
+	  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+	  <link rel = "stylesheet"  href = "../css/header_style.css">
+	  <link rel = "stylesheet"  href = "../css/footer_style.css"> 
+	  <link rel = "stylesheet"  href = "../css/side_menu_style.css">
+	  <script src = "../js/side_menu_java_script.js"></script>
+	  <!--<link rel = "stylesheet" href = "../css/"> your css file "your wireframe name_style.css"-->
+	  <link rel = "stylesheet"  href = "../css/Food cart_styles.css">
+	  
+	  <script src = "../js/Food cart_page.js"></script>
+	  
+	  <link rel = "icon" type="image/gif/png" href = "../images/iccccc_g6c_icon.ico">
+	  <link href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel = "stylesheet">
+	  <title></title>
+	</head>
+	<header>
+	<!--<script src = "../js/"></script>-->
+		<ul class = "navigation">
+			<li class = "list_property logo_property"><img class = "logo" src = "../images/LocusLogo.png" alt = "Locus Food Ride Logo"></li>
+			<li class = "list_property"><a class = "navigation_property" href = "#">HOME</a></li>
+			<li class = "list_property"><a class = "navigation_property" href = "#">RESTAURANT</a></li>
+			<li class = "list_property"><a class = "navigation_property" href = "#">ONGOING OFFERS AND COMBOS</a></li>
+			<li class = "list_property"><a class = "navigation_property" href = "#">ABOUT US</a></li>
+			<li class = "list_property"><img class = "navigation_property navi head_image" src = "../images/iii.png" alt = "Search"></li>
+			<li class = "list_property"><input class = "txtxt" type = "text" placeholder = "Search.." ></li>
+			<li class = "list_property1"><a class = "navigation_property navi navigation_property2" href = "#">Sign out</a></li>
+			<li class = "list_property1"><img class = "navigation_property navi head_image" src = "../images/userW.png" alt = "User"></li>
+			<li class = "list_property1"><img class = "navigation_property head_image" src = "../images/shooping.png" alt = "Food Cart"></li>
+		</ul>
+	
+	</header>
+	
+	
+	<body>
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&lArr;</a>
+		  <a href="#">MY ACCOUNT</a>
+		  <a href="#">FAVOURITES</a>
+		  <a href="#">HELP</a>
+		  <a href="#">SETTINGS</a>
+ 
+		</div>
+
+		<span class = "menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+		<!--
+	Enter your code here...
+	don't change anything ***
+	-->
+	
+	<?php
+		$fetchQuery = mysqli_query($conn, "select*from food") or die ("Could not fetch" .mysqli_error($conn));
+		
+		switch($_REQUEST['change']){
+	
+		case 'Remove':
+			$key = $_POST['key'];
+			
+			$check = mysqli_query($conn, "select*from food where Food_ID = '$key' ") or die("Value not found". mysqli_error($conn));
+		
+		
+			if(mysqli_num_rows($check) > 0){
+				$queryDelete = mysqli_query($conn, "DELETE FROM food WHERE Food_ID = '$key' ") or die ("Not deleted" .mysqli_error($conn));
+				header('Location:Food_cart.php');
+			}
+			
+		case 'Update':
+			$key = $_POST['key'];
+			$unit = $_POST['qty'];
+			
+			$check = mysqli_query($conn, "select*from food where Food_ID = '$key' ") or die("Value not found". mysqli_error($conn));
+		
+		
+			if(mysqli_num_rows($check) > 0){
+				$queryUpdate = mysqli_query($conn, "UPDATE food SET Food_Description = '$unit' WHERE Food_ID = '$key' ") or die ("Not updated" .mysqli_error($conn));
+				header('Location:Food_cart.php');
+			}
+		
+		}
+	
+	?>
+	<br>
+	<img src = "../images/shopping-cart.png" style = "width:50px; height:50px; margin-left:50px;">
+	<h2 style = "margin-left:120px; margin-top:-45px;">Food cart</h2>
+	
+	<div style = "margin-left:985px; margin-right:20px; margin-top:-60px; " class = "myDiv">
+		<img src = "../images/shopping-cart.png" style = "width:50px; height:50px; margin-left:10px; margin-top:20px;">
+		<!--
+		<h3 style = "margin-left:80px; margin-top:-65px;">Name :</h3><br>
+		<h3 style = "margin-left:80px; margin-top:-37px;">Address :</h3><br>
+		<h3 style = "margin-left:80px; margin-top:-37px;">Contact-No :</h3><br>
+		-->
+		<h3 style = "margin-left:80px; margin-top:-65px;">Name :<br>Address : <br>Contact No :</h3>
+	
+	</div>
+	
+	<div class = "myDiv1" style = "margin-left:60px; width:78%;" >
+		<table >
+		
+			<tr>
+					<th>Image Details</th>
+					<th>Product Details</th>
+					<th>Price Details</th>
+					<th>Quantity Details</th>
+					<th>Whole price</th>
+					
+			</tr>
+		
+		</table>
+	</div>
+	
+	<div style = "overflow-y : auto; height:500px; margin-left:60px;" class = "myDiv1" >
+		
+			<table>
+			
+				<?php 		
+				$tot = 0;
+				while($row = mysqli_fetch_array($fetchQuery)) { 
+				$unit_price = 0 ; ?>
+			
+				<tr>
+					<form action = "Food_cart.php" method = "POST">
+						<td><img src = "../images/<?php echo $row['Food_Image']; ?>" style = "width:200px; height:200px; border-radius:20%;"></td>
+						<td><?php echo $row['Food_Name']; ?><br><?php echo $row['Food_Description']; ?></td>
+						<td><?php echo $row['Food_Price']; ?></td>
+						<td><input type = "textbox" name = "qty" value = "<?php echo $row['Food_Description']; ?>" ></td>
+						
+						<?php 
+						$unit_price = $row['Food_Price'] * $row['Food_Description'];
+						$tot = $tot + $unit_price;?>
+						
+						<td><?php echo  "$unit_price"; ?></td>
+						<td><input type = "checkbox" style = "margin-bottom:10px; width:23px; height:23px; " name = "key" value = "<?php echo $row['Food_ID']; ?>" required><input type = "Submit" class = "submit" style = "margin-bottom:20px;" name = "change" value = "Update"> <input type = "Submit" class = "submit" name = "change" value = "Remove"></td>
+						
+						
+					</form>
+				</tr>
+				
+				<?php } ?>
+				
+				<tr>
+					<td>Total is = <?php echo "$tot" ; ?></td>
+				</tr>
+			</table>
+		
+		
+	</div>
+	<br><br>
+	
+	</body>
+
+	<footer style = "margin-top:100px;">
+		<div class="foo">
+			<div class="inner-footer" >
+
+				<div class="footer-items">
+					<form action = "#" target = "self" method="get">
+				<label> <h1> Comments </h1> </label> <br>
+				<textarea id="comments" name="comments" rows ="7" cols="50"  class="txtar"  > </textarea> <br> <br>
+				<input type="submit" class="btn1" id="btn1" name="btn1" value="Submit"> 
+				</div>
+
+				<div class="footer-items">
+					<h2> Links</h2>
+					<div class="border"></div>
+					<ul>
+						<a href=""><li>Home</li></a>
+						<a href=""><li>Restaurant</li></a>
+						<a href=""><li>Cart</li></a>
+						<a href=""><li>Contact Us</li></a>
+					</ul>
+				</div>
+
+				<div class="footer-items">
+					<h2>About Us</h2>
+					<div class="border"></div>
+					<ul>
+						<a href=""><li>Our Story</li></a>
+						<a href=""><li>FAQ</li></a>
+						<a href=""><li>Site Map</li></a>
+						
+					</ul>
+				</div>
+				
+
+				<div class="footer-items">
+					<!--<div class="border"></div>-->
+					<img  id = "logoo" src="../images/logo.jpg" alt = "LOCUS FOOD RIDE">
+
+					<ul>
+						<li><i class="fa fa-map-marker" aria-hidden="true"></i>94/2 locus way colombo 7</li>
+						<li><i class="fa fa-phone" aria-hidden="true"></i>+9423671245</li>
+						<li><i class="fa fa-envelope" aria-hidden="true"></i>LocusFoodRide@gmail.com</li>
+					</ul> 
+					
+
+				<form action = "#" target = "self" method="get">
+					<h3 > Select Language </h3>
+					<select class="language">
+						<option> English </option>
+						<option> Chinese </option>
+						<option> French </option>
+						<option> Spanish </option>
+						<option> Latin </option>
+					</select> <br> <br>
+					
+					<div class="social-media">
+						<a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a href="https://www.google.com/intl/si/gmail/about/#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				
+			</div>
+			<div class="footer-bottom">
+				&copy Copyright Online Food Delivery. All rights reserved.
+			</div>
+		</div>
+	</footer>
+</html>
